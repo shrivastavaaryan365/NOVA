@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: Arial,sans-serif;
     background: #ffffff;
@@ -49,6 +50,15 @@ body{
 
 .button:active{
     transform: scale(0.96);
+}
+
+.visual-circle:hover{
+    background: #333333;
+    transform: translateY(-2px);
+}
+
+.visual-circle:active{
+    transform: scale(1);
 }
 
 .nav-links a{
@@ -101,7 +111,7 @@ body{
     padding: 8px 14px;
     border: 1px solid #eaeaea;
     border-radius: 50px;
-    color: #2563eb;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 600;
     background-color: #111111;
@@ -150,6 +160,15 @@ body{
     transform: translateY(-2px);
 }
 
+.logo{
+    padding: 11px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    background-color: #111111;
+    color: #ffffff;
+
+}
+
 .secondary-btn{
     border: 1px solid #dddddd;
     color: #111111;
@@ -194,6 +213,8 @@ body{
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
 }
 
+
+
 .visual-top{
     display: flex;
     justify-content: space-between;
@@ -215,6 +236,8 @@ body{
     font-size: 28px;
     font-weight: 700;
     box-shadow: 0 20px 50px rgba(37, 99, 235, 0.18);
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .visual-bottom{
