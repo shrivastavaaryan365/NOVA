@@ -166,7 +166,7 @@ body{
     border-radius: 7px;
     background-color: #111111;
     color: #ffffff;
-
+    cursor: pointer;
 }
 
 .secondary-btn{
@@ -251,4 +251,155 @@ body{
 .visual-bottom strong{
     color: #111111;
     font-size: 18px;
+}
+
+.about{
+    padding: 120px 6%;
+    background: #ffffff;
+}
+
+.about-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-header{
+    max-width: 800px;
+    margin-bottom: 70px;
+}
+
+.about-label{
+    display: inline-block;
+    margin: 18px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.about-header h2{
+    color: #111111;
+    font-size: 58px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.about-header h2 span{
+    color: #2563eb;
+}
+
+
+.about-main{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.about-intro{
+    max-width: 420px;
+}
+
+.about-intro p{
+    margin-bottom : 30px;
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.about-link:hover{
+    color: #2563eb;
+}
+
+
+.about-features{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about-feature{
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #eaeaea;
+    transition: 0.3s ease;
+}
+
+
+.about-feature:first-child{
+    padding-top: 0;
+}
+
+.about-feature:last-child{
+    border-bottom: none;
+}
+
+
+.feature-number{
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.about-feature h3{
+    margin-bottom: 8px;
+    color: #111111;
+    font-size: 21px;
+}
+
+
+.about-feature p{
+    max-width: 430px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+
+}
+
+
+.about-feature:hover{
+    transform: translateX(6px);
+}
+
+
+.about-stats{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 30px;
+    padding-top: 55px;
+}
+
+
+
+.about-stat{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-stat strong{
+    color: #111111;
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+
+
+.about-stat span{
+    color: #777777;
+    font-size: 13px;
 }
