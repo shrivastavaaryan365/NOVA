@@ -213,6 +213,15 @@ body{
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
 }
 
+.visual-card:hover{
+    transform: scale(1.1);
+    transition: 2s ease;
+}
+
+.visual-card:active{
+    scale: 0.96;
+}
+
 
 
 .visual-top{
