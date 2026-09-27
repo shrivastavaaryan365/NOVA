@@ -27,3 +27,9 @@ btn.addEventListener("click", () => {
     }
 });
 }
+
+function goToSection() {
+            document.getElementById("navbar").scrollIntoView({
+                behavior: "smooth"
+            });
+        }

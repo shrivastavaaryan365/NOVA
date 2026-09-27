@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <div class="logo" id="logo">NOVA</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -26,7 +26,7 @@
                 <span class="hero-badge">
                     Built Better. Grow Faster.
                 </span>
-
+                
                 <h1>
                     We Build Digital
                     <span>Experiences</span>
@@ -345,7 +345,25 @@
                     </a>
                 </div>
             </div>
+       
+       
         </section>
+            <button class="Floatingbtn" onclick="goToSection()"> 
+           <span> ↑ </span>
+           <Style>
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+     </Style>
+     
+        </button>
+        
     </main>
     <script src="nova.js"></script>
 </body>

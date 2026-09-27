@@ -11,6 +11,41 @@ body{
     color: #111111;
 }
 
+.Floatingbtn {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+
+            width: 65px;
+            height: 65px;
+
+            border-radius: 50%;
+            border: none;
+
+            background: #111111;
+            color: #2563eb;
+
+            font-size: 25px;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 0 20px 60px rgb(22, 99, 193);
+
+            z-index: 999;
+
+            animation: float 2s ease-in-out infinite;
+
+            transition: 0.3s;
+        }
+
+.Floatingbtn:hover{
+    box-shadow: 0 20px 60px #111111;
+}
+
+
 .header{
     width: 100%;
     padding: 20px 6%;
