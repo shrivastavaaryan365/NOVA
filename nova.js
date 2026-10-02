@@ -10,10 +10,10 @@
 let btn = document.getElementById('fNova');
 
 btn.addEventListener("click", () => {
-    if (btn.textContent === "Nova") {
+    if (btn.textContent === "NOVA") {
         btn.textContent = "Innovation";
     } else {
-        btn.textContent = "Nova";
+        btn.textContent = "NOVA";
     }
 });
 {

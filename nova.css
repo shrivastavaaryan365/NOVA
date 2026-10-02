@@ -23,6 +23,23 @@ body {
 }
 
 /* Navbar */
+.logo{
+     margin: 0;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #111111;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(#2563eb,#111111);
+}
+
+.logo:hover{
+    background: linear-gradient(#111111,#2563eb);
+}
+
 
 .navbar {
     max-width: 1200px;
@@ -81,7 +98,7 @@ body {
     padding: 11px 20px;
     border: none;
     border-radius: 7px;
-    background: #111111;
+    background: linear-gradient(#2563eb,#111111);
     color: #ffffff;
     font-size: 14px;
     font-weight: 600;
@@ -94,6 +111,7 @@ body {
 .btn:hover {
     background: #333333;
     transform: translateY(-2px);
+    background: linear-gradient(#111111, #2563eb);
 }
 
 /* Button Active */
@@ -188,8 +206,8 @@ body {
 /* Primary Button Hover */
 
 .primary-btn:hover {
-    background: #2563eb;
     transform: translateY(-2px);
+    background: linear-gradient(#2563eb,#111111);
 }
 
 /* Secondary Button */
@@ -203,8 +221,9 @@ body {
 
 .secondary-btn:hover {
     border-color: #2563eb;
-    color: #2563eb;
+    color: #ffffff;
     transform: translateY(-2px);
+    background: linear-gradient(#2563eb,#111111);
 }
 
 /* Hero Visual */
@@ -223,13 +242,28 @@ body {
     width: 100%;
     height: 100%;
     padding: 28px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #111111;
     border-radius: 24px;
     background: #f7f8fa;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.visual-card:hover{
+    background: linear-gradient(#2563eb, #111111);
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+.visual-card:hover span{
+    color: #ffffff;
+}
+
+.visual-card:hover strong{
+    color:#ffffff
 }
 
 /* Visual Top */
@@ -259,12 +293,15 @@ body {
     box-shadow: 0 20px 50px rgba(37, 99, 235, 0.18);
 }
 
+.visual-circle:hover{
+    background: linear-gradient(#111111, #2563eb);
+}
 /* Visual Bottom */
 
 .visual-bottom {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 50px;
     color: #666666;
     font-size: 14px;
 }
@@ -825,12 +862,14 @@ body {
             transform: scale(1.15);
             box-shadow: 0 0 30px darkblue;
             border-color: #111111;
+            background: linear-gradient(#2563eb,#111111);
+            color: #eeeeee;
         }
 
 
 .Cta{
     padding: 140px 6%;
-    background: #111111;
+    background: linear-gradient(#111111,#2563eb);
     color: #ffffff;
 }
 
@@ -889,10 +928,10 @@ body {
 
 
 .Cta-btn:hover{
-    background: #2563eb;
+    background: linear-gradient(#2563eb,#111111);
     color: #ffffff;
     transform: translateY(-3px);
-    box-shadow:0 0 30px whitesmoke;
+    box-shadow:0 0 25px white;
 }
 
 
