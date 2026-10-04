@@ -1003,7 +1003,7 @@ body {
 }
 
 .contact-info, 
-.contact-item{
+.contact-form{
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -1029,7 +1029,12 @@ form-group{
     text-decoration: none;
 }
 
-.contact-links{
+.form-group label{
+    font-size: 12px;
+    color: #6f6c66;
+}
+
+/* .contact-links{
     display: flex;
     gap: 18px;
 }
@@ -1037,11 +1042,17 @@ form-group{
 .contact-links a{
     color: #6f6c66;
     text-decoration: none;
-}
+} */
 
-.form-group label{
-    font-size: 12px;
-    color: #6f6c66;
+.form-group input,
+.form-group textarea {
+    padding: 11px 0;
+    border: 0;
+    border-bottom: 1px solid #cbc7c0;
+    outline: 0;
+    background: transparent;
+    color: #171717;
+    font: inherit;
 }
 
 .form-group input:focus,
@@ -1069,4 +1080,8 @@ form-group{
 .contact-btn span{
     margin-left: 15px;
     transition: 0.3s;
+}
+
+.contact-btn:hover span{
+    margin-left: 20px;
 }
