@@ -14,11 +14,15 @@
 
     <header class="header">
 
-        <nav class="navbar" id="navbar">
+        <nav class="navbar" id="navbar" aria-label="Main navigation">
 
-            <div class="logo">
-                NOVA
-            </div>
+            <a class="logo" href="#home" aria-label="NOVA home">
+                <span class="logo-mark" aria-hidden="true">N</span>
+                <span class="logo-copy">
+                    <strong>NOVA</strong>
+                    <small>Digital Experience</small>
+                </span>
+            </a>
 
             <ul class="nav-links">
 
@@ -40,9 +44,9 @@
 
             </ul>
 
-            <button class="btn">
-                Get Started
-            </button>
+            <a class="btn" href="#contact">
+                Let's Talk <span aria-hidden="true">↗</span>
+            </a>
 
         </nav>
 
@@ -54,6 +58,8 @@
     <main>
 
         <section class="hero" id="home">
+
+            <canvas class="hero-dots-canvas" aria-hidden="true"></canvas>
 
             <!-- Hero Content -->
 
@@ -76,11 +82,11 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#" class="hero-btn primary-btn">
+                    <a href="#contact" class="hero-btn primary-btn">
                         Get Started
                     </a>
 
-                    <a href="#" class="hero-btn secondary-btn">
+                    <a href="#services" class="hero-btn secondary-btn">
                         Explore Services
                     </a>
 
@@ -170,8 +176,8 @@
                             experiences for modern businesses.
                         </p>
 
-                        <a href="#" class="about-link">
-                            Discover NOVA
+                        <a href="#services" class="about-link">
+                            Discover NOVA <span aria-hidden="true">↗</span>
                         </a>
 
                     </div>
@@ -359,7 +365,7 @@
                             technology and real business goals.
                         </p>
 
-                        <a href="#" class="service-link">
+                        <a href="#contact" class="service-link">
                             Explore Service
                             <span>→</span>
                         </a>
@@ -624,7 +630,7 @@
                         One partner for your digital journey.
                     </span>
 
-                    <a href="#" class="services-bottom-link">
+                    <a href="#contact" class="services-bottom-link">
                         Start a Project
                         <span>→</span>
                     </a>
@@ -650,7 +656,7 @@
                     Let's turn your ideas into a digital experience that makes a real impact.
                 </p>
 
-                <a href="#" class="Cta-btn">
+                <a href="#contact" class="Cta-btn">
                     Start a Project
                     <span> ↗ </span>
                 </a>
@@ -687,21 +693,29 @@
                 <div class="contact-main">
                    
                     <div class="contact-info">
+
+                        <div class="contact-info-heading">
+                            <span class="contact-card-eyebrow">START A CONVERSATION</span>
+                            <h3>Let’s make it happen.</h3>
+                            <p>Tell us a little about what you’re building. We’ll be glad to hear from you.</p>
+                        </div>
                    
                         <div class="contact-item">
-                   
+                            <span class="contact-icon" aria-hidden="true">@</span>
+                            <div class="contact-item-copy">
                             <span class="contact-item-label">
                                 EMAIL
                             </span>
                    
                             <a href="mailto:hello@nova.com" class="contact-links">
                                 hello@nova.com
-                   
                             </a>
+                            </div>
                         </div>
 
                         <div class="contact-item">
-                   
+                            <span class="contact-icon" aria-hidden="true">+</span>
+                            <div class="contact-item-copy">
                             <span class="contact-item-label">
                                 PHONE
                             </span>
@@ -709,28 +723,36 @@
                             <a href="tel:+9176****45" class="contact-links">
                                 +9176****45
                             </a>
-                      
+                            </div>
                         </div>
 
                         <div class="contact-item">
+                            <span class="contact-icon" aria-hidden="true">◎</span>
+                            <div class="contact-item-copy">
                             <span class="contact-item-label">
                                 LOCATION
                             </span>
 
                             <p>INDIA</p>
+                            </div>
                         </div>
                     </div>
                  
                  <!-- Contact-form -->
                     <form  class="contact-form">
+                        <div class="contact-form-heading">
+                            <span>YOUR NEXT BIG IDEA</span>
+                            <h3>Send us a message</h3>
+                            <p>Share a few details and we’ll get back to you soon.</p>
+                        </div>
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                            <input type="text" id="name" name="name" placeholder="Enter Your Name" autocomplete="name">
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                            <input type="email" name="email" id="email" placeholder="Enter Your Email" autocomplete="email">
                         </div>
 
                         <div class="form-group">
@@ -748,7 +770,7 @@
         </section>
 
 
-        <button class="Floatingbtn" onclick="goToSection()"> 
+        <button class="Floatingbtn" type="button" onclick="goToSection()" aria-label="Back to top" title="Back to top">
            <span> ↑ </span>
 
            
